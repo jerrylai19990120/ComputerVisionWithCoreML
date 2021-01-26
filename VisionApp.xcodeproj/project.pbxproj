@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		92855B0A25C0BD74007A5C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B0925C0BD74007A5C6E /* AppDelegate.swift */; };
 		92855B0C25C0BD74007A5C6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B0B25C0BD74007A5C6E /* SceneDelegate.swift */; };
-		92855B0E25C0BD74007A5C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B0D25C0BD74007A5C6E /* ViewController.swift */; };
+		92855B0E25C0BD74007A5C6E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B0D25C0BD74007A5C6E /* CameraVC.swift */; };
 		92855B1125C0BD74007A5C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855B0F25C0BD74007A5C6E /* Main.storyboard */; };
 		92855B1325C0BD75007A5C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92855B1225C0BD75007A5C6E /* Assets.xcassets */; };
 		92855B1625C0BD75007A5C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855B1425C0BD75007A5C6E /* LaunchScreen.storyboard */; };
+		92855B2125C0C0FF007A5C6E /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B2025C0C0FF007A5C6E /* RoundedShadowView.swift */; };
+		92855B2325C0C29D007A5C6E /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B2225C0C29D007A5C6E /* RoundedShadowButton.swift */; };
+		92855B2525C0C30E007A5C6E /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855B2425C0C30E007A5C6E /* RoundedShadowImageView.swift */; };
+		92855B2725C0CED9007A5C6E /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92855B2625C0CED9007A5C6E /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		92855B0625C0BD74007A5C6E /* VisionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92855B0625C0BD74007A5C6E /* Vision App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92855B0925C0BD74007A5C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92855B0B25C0BD74007A5C6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92855B0D25C0BD74007A5C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92855B0D25C0BD74007A5C6E /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		92855B1025C0BD74007A5C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92855B1225C0BD75007A5C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92855B1525C0BD75007A5C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92855B1725C0BD75007A5C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92855B2025C0C0FF007A5C6E /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		92855B2225C0C29D007A5C6E /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		92855B2425C0C30E007A5C6E /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		92855B2625C0CED9007A5C6E /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		92855B0725C0BD74007A5C6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92855B0625C0BD74007A5C6E /* VisionApp.app */,
+				92855B0625C0BD74007A5C6E /* Vision App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +64,43 @@
 		92855B0825C0BD74007A5C6E /* VisionApp */ = {
 			isa = PBXGroup;
 			children = (
+				92855B2625C0CED9007A5C6E /* SqueezeNet.mlmodel */,
+				92855B1F25C0BDC6007A5C6E /* Views */,
+				92855B1E25C0BDBC007A5C6E /* Resources */,
+				92855B1D25C0BDB0007A5C6E /* Controllers */,
 				92855B0925C0BD74007A5C6E /* AppDelegate.swift */,
 				92855B0B25C0BD74007A5C6E /* SceneDelegate.swift */,
-				92855B0D25C0BD74007A5C6E /* ViewController.swift */,
 				92855B0F25C0BD74007A5C6E /* Main.storyboard */,
 				92855B1225C0BD75007A5C6E /* Assets.xcassets */,
 				92855B1425C0BD75007A5C6E /* LaunchScreen.storyboard */,
 				92855B1725C0BD75007A5C6E /* Info.plist */,
 			);
 			path = VisionApp;
+			sourceTree = "<group>";
+		};
+		92855B1D25C0BDB0007A5C6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92855B0D25C0BD74007A5C6E /* CameraVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92855B1E25C0BDBC007A5C6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92855B1F25C0BDC6007A5C6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92855B2025C0C0FF007A5C6E /* RoundedShadowView.swift */,
+				92855B2225C0C29D007A5C6E /* RoundedShadowButton.swift */,
+				92855B2425C0C30E007A5C6E /* RoundedShadowImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +120,7 @@
 			);
 			name = VisionApp;
 			productName = VisionApp;
-			productReference = 92855B0625C0BD74007A5C6E /* VisionApp.app */;
+			productReference = 92855B0625C0BD74007A5C6E /* Vision App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92855B0E25C0BD74007A5C6E /* ViewController.swift in Sources */,
+				92855B2125C0C0FF007A5C6E /* RoundedShadowView.swift in Sources */,
+				92855B2325C0C29D007A5C6E /* RoundedShadowButton.swift in Sources */,
+				92855B0E25C0BD74007A5C6E /* CameraVC.swift in Sources */,
+				92855B2725C0CED9007A5C6E /* SqueezeNet.mlmodel in Sources */,
 				92855B0A25C0BD74007A5C6E /* AppDelegate.swift in Sources */,
+				92855B2525C0C30E007A5C6E /* RoundedShadowImageView.swift in Sources */,
 				92855B0C25C0BD74007A5C6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = VisionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jerry-lai.VisionApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Vision App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = VisionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jerry-lai.VisionApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Vision App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
